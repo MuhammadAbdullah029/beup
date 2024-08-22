@@ -1,0 +1,418 @@
+
+
+@media (max-width: 600px) {
+    main{
+        overflow-x: hidden;
+    }
+    .phone-menu{
+        bottom: 5vw;
+        right: 15vw;
+    }
+    .phone-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .phone-menu ul .p-list{
+        font-size: 3vw;
+        padding: 1vw;
+        width: 100%;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+    .phone-menu .p-img{
+        width: 11vw;
+        height: 11vw;
+    }
+    .phone-menu .p-img img{
+        height: 6vw;
+    }
+    nav .logo img{
+        height: 13vw;
+    }
+    nav ul li .nav-elem{
+        display: none;
+    }
+    .page{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background-position: top;
+        padding-top: 11vw;
+        height: 115vh;
+    }
+    .left{
+        width: 100%;
+        height: 40%;
+        gap: 6vw;
+        padding-left: 5vw;
+        padding-top: 25vw;
+    }
+    .left > h1{
+        width: 99%;
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    .left > p{
+        font-size: 5vw;
+    }
+    .left > button{
+        padding: 3vw 6vw;
+        border-radius: 15px;
+        width: 41%;
+        font-size: 3vw;
+        margin-top: 1vw;
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+        margin-left: 11vw;
+        margin-top: 5vw;
+    }
+    .small-img{
+        width: 8vw;
+        height: 8vw;
+    }
+    .med-img{
+        width: 10vw;
+        height: 10vw;
+    }
+    .large-img{
+        width: 12vw;
+        height: 12vw;
+    }
+    .t-8{
+        top: 18vw;
+    }
+    .t-11{
+        top: 24vw;
+    }
+    .t-16{
+        top: 38vw;
+    }
+    
+    .t-18{
+        top: 38vw;
+    }
+    .t-20{
+        top: 42vw;
+    }
+    .t-25{
+        top: 56vw;
+    }
+    .l-3{
+        left: 8vw;
+    }
+    .l-8{
+        left: 18vw;
+    }
+    .l-11{
+        left: 24vw;
+    }
+    .l-7{
+        left: 16vw;
+    }
+    .l-13{
+        left: 28vw;
+    }
+    .l-15{
+        left: 32vw;
+    }
+    .l-20{
+        left: 42vw;
+    }
+    .l-28{
+        left: 68vw;
+    }
+    .l-25{
+        left: 52vw;
+    }
+    .l-30{
+        left: 62vw;
+    }
+    .logo-tag{
+        height: 16vw;
+        width: 16vw;
+        top: 58vw;
+        left: 31vw;
+    }
+    .logo-tag img{
+        height: 105vw;
+    }
+    .signup-area{
+        height: 14vw;
+    }
+    .signup-area h3{
+        font-size: 2vw;
+    }
+    .signup-area a{
+        padding: 1.5vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        border-radius: 3px;
+        margin-left: -8vw;
+        font-size: 2vw;
+    }
+    .aq{
+        top: -6vw;
+    }
+    
+    .yel{
+        bottom: -4vw;
+    }
+    .page1{
+        width: 100%;
+        height: 155vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 8vw;
+    }
+    .girl-img{
+        width: 100%;
+    }
+    .girl-img img{
+        height: 58vw;
+        margin-left: 23vw;
+    }
+    .page1-text{
+        width: 100%;
+        margin-top: 3vw;
+    }
+    .page1-text p{
+        width: 95%;
+        margin-top: 13vw;
+        font-size: 4vw;
+        line-height: 5vw;
+        margin: auto;
+    }
+
+    .page2{
+        height: 150vw;
+    }
+    .large-aq{
+        height: 300vw;
+        left: -175vw;
+        top: -100vw;
+        z-index: 11;
+    }
+    .improve-text{
+        width: 31%;
+        font-size: 6vw;
+    }
+    .pos1{
+        top: 11vw;
+        left: 1vw;
+    }
+    .pos2{
+        top: 38vw;
+        right: -1vw;
+    }
+    .pos3{
+        bottom: 31vw;
+        left: 4vw;
+    }
+    .small-yel{
+        height: 35vw;
+        top: 21vw;
+        left: -1vw;
+    }
+    .large-yel{
+        height: 300vw;
+        right: -177vw;
+        top: -65vw;
+        z-index: 3;
+    }
+    
+    .yell-circ-1{
+        height: 18vw;
+        position: absolute;
+        bottom: 33vw;
+        left: -15vw;
+    }
+    .yell-circ-2{
+    height: 19vw;
+    right: -15vw;
+    top: 38vw;
+    }
+    .aq-circ{
+    height: 21vw;
+    right: 31vw;
+    bottom: 29vw;
+    z-index: 1;
+    }
+
+    .page3{
+        height: 55vh;
+    }
+    .bg-img:hover{
+        width: 90%;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    .p3-text{
+        font-size: 6vw;
+        left: 39%;
+        top: 40%;
+    }
+
+
+    footer{
+        height: 27vh;
+        background-position: bottom;
+    }
+    footer .bg-f{
+        width: 100%;
+        object-fit: cover;
+    }
+    footer .aqu svg{
+        display: none;
+    }
+    footer .yell img{
+        height: 25vw;
+        position: absolute;
+        top: -1%;
+    }
+    .white-line{
+        left: 35%;
+        top: 50%;
+    }
+
+}
+
+
+
+/* Ipad and Tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    nav{
+        padding-top: 8vw;
+    }
+
+    nav .logo img{
+        height: 8vw;
+    }
+    li .nav-elem{
+        font-size: 1.5vw;
+    }
+    .page{
+        height: 55rem;
+        overflow: hidden;
+    }
+    .right{
+        width: 50%;
+        position: relative;
+        margin-top: -5rem;
+    }
+    .page1{
+        height: 55vh;
+    }
+
+    .left{
+        padding-left: 6vw;
+    }
+
+    .left > button{
+        padding: 1vw 1.5vw;
+        width: 47%;
+        font-size: 2vw;
+        margin-left: 1.5vw;
+        margin-top: -1vw;
+        cursor: pointer;
+    }
+    .left > h1{
+        width: 89%;
+    }
+    .left > p{
+        font-size: 1.8vw;
+    }
+
+    .right{
+        top: 35vmax;
+        left: 3%;
+    }
+
+
+    .page1-text p{
+        width: 85%;
+        font-size: 2vw;
+        line-height: 2.3vw;
+    }
+    .aq{
+        top: -7vw;
+    }
+
+    .page2{
+        width: 100%;
+        height: 115vw;
+        overflow: hidden;
+        position: relative;
+        /* background-color: red; */
+    }
+    .large-aq{
+        height: 290vw;
+        left: -171vw;
+        top: -105vw;
+    }
+    .large-yel{
+        height: 250vw;
+        right: -130vw;
+        bottom: -81vw;
+    }
+    .yell-circ-1{
+        height: 11vw;
+        position: absolute;
+        bottom:5vw;
+        left: -9vw;
+    }
+    .yell-circ-2{
+        height: 15vw;
+        position: absolute;
+        right: -12vw;
+        bottom: 39vw;
+    }
+    footer{
+        height: 55vw;
+        width: 100%;
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    footer .aqu svg{
+        display: none;
+    }
+    
+    footer .yell img{
+        height: 25vw;
+        position: absolute;
+        top: -1%;
+    }
+    
+    .white-line{
+        width: 30%;
+        height: 3vw;
+        background-color: white;
+        position: absolute;
+        left: 35%;
+        top: 20%;
+    }
+    .black-line{
+        width: 70%;
+        height: .2vw;
+        background-color: black;
+        position: absolute;
+        bottom: 8%;
+        left: 15%;
+    }
+
+}

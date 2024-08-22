@@ -1,0 +1,882 @@
+
+
+@media (max-width: 600px) {
+    
+    .phone-menu{
+        bottom: 5vw;
+        right: 15vw;
+    }
+    .phone-menu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        width: 100%;
+    }
+    .phone-menu ul .p-list{
+        margin-top: .5vw;
+        position: relative;
+        right: -115vw;
+        color: #fff;
+        font-size: 1vw;
+        background-color: rgba(5, 5, 5, 0.514);
+        padding: .5vw;
+        width: 100%;
+        border-radius: 4px;
+    }
+    .phone-menu .p-img{
+        width: 13vw;
+        height: 13vw;
+    }
+    .phone-menu .p-img img{
+        height: 8vw;
+    }
+    .loader h1{
+        font-size: 19vw;
+    }
+    section{
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    nav{
+        height: 11vh;
+    }
+    nav .logo img{
+        height: 13vw;
+    }
+    nav ul li a{
+        display: none;
+    }
+    .after-nav{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    
+
+    .after-nav section{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 70vh;
+        /* background-color: white;
+        position: relative;
+        overflow: hidden;
+        padding-top: 13vw; */
+    }
+    .cir{
+        height: 45vw;
+        position: absolute;
+        top: 85%;
+        right: 80%;
+    }
+    .text{
+        margin-left: 7vw;
+        margin-top: 13vw;
+        
+    }
+    
+    .left h1{
+        font-size: 11vw;
+        font-weight: 500;
+        color: #1E2432;
+        margin-top: 5vw;
+        border-bottom: 4px solid black;
+        width: fit-content;
+        display: inline-block;
+    }
+    .ml{
+        margin-left: 8vw;
+    }
+    .line{
+        display: none;
+    }
+    .paragraph{
+        font-size: 5vw;
+        line-height: 5vw;
+        text-align: center;
+        margin-left: 10vw;
+    }
+    .cont{
+        gap: 1vw;
+        margin-top: 4vw;
+        display: flex;
+        justify-content: center;
+        margin-left: -3vw;
+    }
+    .cont .inn{
+        padding: 2vw;
+        height: 9vw;
+        width: 33vw;
+        font-size: 3vw;
+    }
+    
+    .cont button{
+        padding: 1.5vw;
+        height: 9vw;
+        width: 23vw;
+        border: none;
+        font-size: 3vw;
+    }
+
+    .right{
+        width: 100%;
+        height: 60vh;
+        padding-top: 1vw;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 55vh;
+        margin-top: 44vw;
+    }
+    .slide .fgg{
+        margin-top: 63vw;
+        margin-left: 4vw;
+    }
+    .slide .bhh{
+        margin-top: 38vw;
+        margin-left: 19vw;
+    }
+    .slide .bjj{
+        scale: 1.7;
+        margin-top: 58vw;
+        margin-left: 9vw;
+    }
+    .text-overlay {
+        position: absolute;
+        bottom: 200px;
+        left: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .text-overlay h3{
+        font-size: 3vw;
+    }
+    .name-overlay {
+        position: absolute;
+        top: 175px;
+        left: 10px;
+        scale: 1;
+    }
+    .first svg{
+        height: 5vw;
+    }
+    .second svg{
+        height: 5vw;
+    }
+    .third svg{
+        height: 5vw;
+    }
+    .exp{
+        font-size: 2vw;
+    }
+    .yer{
+        font-size: 2vw;
+    }
+    .controls {
+        top: 50%;
+    }
+    .control-btn {
+        background-color: rgba(253, 253, 253, 0.5);
+        width: 5vw;
+        height: 5vw;
+        font-size: 2.5vw;
+    }
+    .ex{
+        position: absolute;
+        width: 100%;
+        height: 7vh;
+        background-color: #fab8c4;
+        bottom: -.5%;
+    }
+    .next{
+        min-height: 110vw;
+        margin-top: 5vw;
+        padding-left: 7vw;
+        
+    }
+    .fdev{
+        width: 100%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1vw;
+        position: relative;
+    }
+    
+    .left-text {
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .left-text .mm{
+        margin-left: 8vw;
+    }
+    .left-text h1{
+        font-size: 9vw;
+        color: #1E2432;
+        font-weight: 500;
+        line-height: 9vw;
+        text-align: center;
+        width: fit-content;
+        margin-top: 4vw;
+        border-bottom: 3px solid black;
+    }
+    .left-text-para{
+        width: 60%;
+        margin-top: 8vw;
+        font-size: 4vw;
+        line-height: 4vw;
+        text-align: center;
+    }
+    .card1{
+        width: 30%;
+        height: 45vw;
+        padding: 3vw;
+    }
+    .card1 h4{
+        font-size: 4vw;
+    }
+    .card1 p{
+        margin-top: 3vw;
+        font-size: 3vw;
+        display: none;
+    }
+    .card1 svg{
+        height: 20vw;
+    }
+    .card1:hover{
+        height: 56vw;
+        background-color: white;
+    }
+    .p{
+        position: absolute;
+    }
+    .aa{
+        top: 40%;
+        left: -1.3%;
+    }
+    .bb{
+        top: 40%;
+        left: 31%;
+    }
+    .cc{
+        top: 105%;
+        left: -1.3%;
+    }
+    .ddd{
+        top: 79%;
+        left: -1.3%;
+    }
+    .ff{
+        top: 79%;
+        left: 31%;
+    }
+    
+    .page3{
+        margin-top: 115vw;
+    }
+    .page-z{
+        margin-top: 5vw;
+    }
+    .i-t .sl img{
+        height: 45vw;
+        margin-left: 1vw;
+        border-radius: 15px;
+    }
+    .i-t .sr h1{
+        width: 130%;
+        font-size: 4.5vw;
+    }
+    .sr p{
+        width: 121%;
+        font-size: 2.5vw;
+    }
+    .page h1{
+        font-size: 5vw;
+        margin-top: 5vw;
+    }
+    .page .te{
+        width: 81%;
+        font-size: 2.5vw;
+    }
+    .cards{
+        gap: 8vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 6vw 5vw;
+    }
+    .card {
+        width: 100%;
+    }
+    .card img{
+        height: 35vw;
+    }
+    .card img:hover{
+        scale: 1.3;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .card h3{
+        font-size: 5vw;
+        margin-top: 5vw;
+        width:  100%;
+        text-align: left;
+    }
+    .card p{
+        width: 85%;
+        font-size: 2.5vw;
+        margin-top: 1vw;
+    }
+
+    .page1{
+        gap: 15vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        padding-top: 25vw;
+        position: relative;
+        margin: auto;
+        height: 100vh;
+        margin-bottom: 8vw;
+    }
+    .page1 img {
+        display: none;
+    }
+    .ls{
+        width: 100%;
+        top: -9vw;
+    }
+    .slide{
+        width: 95%;
+        margin-top: 3vw;
+    }
+    .steps span{
+        font-size: 2.5vw;
+    }
+    .steps{
+        padding: .5vw;
+    }
+    .st{
+        width: 45%;
+    }
+    .rs{
+        width: 100%;
+        padding-top: 1.5vw;
+        margin-top: 5vw;
+    }
+    .rs h1{
+        color: black;
+        width: 100%;
+        font-weight: 600;
+    }
+    .rs p{
+        width: 95%;
+    }
+    .org-card{
+        height: 65vw;
+        width: 78vw;
+        margin-top: 5vw;
+        margin-left: -3vw;
+        border-radius: 15px;
+    }
+    .org-card h4{
+        margin-top: 3vw;
+        font-size: 6vw;
+    }
+    .org-card h3{
+        margin-top: 3vw;
+        font-size: 9vw;
+    }
+    .org-card p{
+        width: 80%;
+        line-height: 5vw;
+    }
+    .btns{
+        gap: 3vw;
+        margin-top: 5vw;
+        margin-left: 1.5vw;
+    }
+    .btns .circle{
+        height: 9vw;
+        width: 9vw;
+    }
+    .btns button{
+        padding: 2vw 4vw;
+        font-size: 3vw;
+    }
+
+
+    .center-card{
+        width: 95%;
+        height: 35vw;
+        overflow: hidden;
+        margin-top: 17vw;
+    }
+    .center-card .center-card-text{
+        width: 70%;
+        height: 100%;
+        margin-left: -1.5vw;
+    }
+    .center-card-text > h3{
+        font-size: 5vw;
+        width: 90%;
+    }
+    .center-card-text > p{
+        width: 89%;
+        font-size: 2.5vw;
+        margin-top: 2.5vw;
+    }
+    .center-card-img {
+        height: 11vw;
+        width: 30%;
+    }
+    .center-card-img img{
+        height: 25vw;
+        margin-top: -7vw;
+        margin-left: -5vw;
+    }
+    .lead-and-sale{
+        height: 60vh;
+        /* background-color: red; */
+
+    }
+    .lead-and-sale .absolute-img{
+        height: 40vw;
+        top: -25vw;
+        right: -30vw;
+        display: none;
+    }
+    .sales{
+        width: 60%;
+    }
+    .sales > h1{
+        width: 90%;
+        font-size: 5vw;
+    }
+    .sales > p{
+        width: 90%;
+        margin-top: 3vw;
+        font-size: 2.5vw;
+    }
+    .zig{
+        height: 75vw;
+        top: 18vmin;
+        right: -2.5vmax;
+    }
+    .perce {
+        width: 35%;
+        height: 27vw;
+        border-bottom-left-radius: 25px;
+        margin-top: 23vw;
+    }
+    .perce > h1{
+        font-size: 8vw;
+    }
+    .perce > p{
+        font-size: 2.5vw;
+        margin-top: 1.5vw;
+    }
+    .aq-text{
+        width: 50%;
+        height: 100%;
+    }
+    .aq-text > h1{
+        width: 80%;
+        font-size: 5vw;
+        margin-top: 6vw;
+    }
+    .aq-text img{
+        margin-top: -3vw;
+        margin-left: -9vw;
+        height: 25vw;
+    }
+    .half-card{
+        width: 50%;
+        height: 48vw;
+        padding: 5vw 0;
+        border-top-right-radius: 55px;
+        border-radius: 15px;
+        margin-top: -2.8vw;
+        margin-right: 1.6vw;
+    }
+    .half-card > h1{
+        font-size: 5vw;
+    }
+    .half-card > p{
+        margin-top: 1.5vw;
+        width: 90%;
+        margin-left: 3vw;
+        font-size: 2vw;
+    }
+    .o-card{
+        height: 13vw;
+        width: 38vw;
+        border-radius: 5px;
+        padding: 0 3vw;
+        bottom: 1vw;
+        right: 9vw;
+        -webkit-box-shadow: 0 0 0 5px #ffffff;
+                box-shadow: 0 0 0 5px #ffffff;
+    }
+    .bor{
+        border-right: 1px solid white;
+        padding-right: 3vw;
+    }
+    .o-card .parts > h2{
+        font-size: 2vw;
+    }
+    .o-card .parts > p{
+        font-size: 1.8vw;
+    }
+    .o-card-btn{
+        position: absolute;
+        bottom: -7vw;
+        right: 25vw;
+        font-size: 3vw;
+    }
+
+
+    .gr-bg{
+        height: 100vh;
+        padding-bottom: 5vw;
+        margin-bottom: 3vw;
+    }
+    .goal-result{
+        width: 90%;
+        height: 90vh;
+        gap: 9vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 3vw;
+        padding-top: 6vw;
+    }
+    .how-do-text{
+        width: 100%;
+        height: 45%;
+        gap: 3vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-left: 3vw;
+    }
+    .how-do-text > h1{
+        font-size: 8vw;
+        margin-bottom: 2vw;
+        position: relative;
+    }
+    
+    .how-do-text > h1 span{
+        width: 40%;
+        top: -3vw;
+        left: 55vw;
+    }
+    .how-do-text > h1 span svg{
+        width: 40%;
+    }
+    .how-do-text > p{
+        margin-bottom: 2vw;
+    }
+    .how-do-text .btn{
+        font-size: 3vw;
+        font-weight: 600;
+        padding: 2vw 2.5vw;
+        width: 35%;
+    }
+    .next-cards{
+        width: 100%;
+        /* height: 65vh; */
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 3vw;
+        padding-left: 3vw;
+        margin-top: -8vw;
+    }
+    .first-two-card .cardof{
+        height: 40vw;
+        width: 36vw;
+        padding: 2vw;
+        border-radius: 8px;
+        margin-top: 2vw;
+    }
+    .cardof .img{
+        height: 12vw;
+        width: 35%;
+    }
+    .cardof > p{
+        font-size: 2.5vw;
+    }
+
+
+    .clients{
+        height: 35vh;
+        margin-top: 16vw;
+    }
+    .clients > h1{
+        font-size: 9vw;
+    }
+    .swiper-wrapper .swiper-slide {
+        height: 35vw;
+        padding: 0 1vw;
+      }
+    .img-co{
+        width: 55%;
+        height: 18vw;
+        border-radius: 9px;
+        margin-left: 1vw;
+    }
+    .hide{
+        opacity: 0;
+    }
+    .prev{
+        margin-left: -55vw;
+    }
+    .next{
+        margin-right: -55vw;
+    }
+
+    footer{
+        height: 27vh;
+        background-position: bottom;
+    }
+    footer .bg-f{
+        width: 100%;
+        object-fit: cover;
+    }
+    footer .aqu svg{
+        display: none;
+    }
+    footer .yell img{
+        height: 25vw;
+        position: absolute;
+        top: -1%;
+    }
+    .white-line{
+        left: 35%;
+        top: 50%;
+    }
+
+}
+
+/* Ipad and Tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    section{
+        height: 85vw;
+    }
+    nav .logo img{
+        height: 8vw;
+    }
+    li a{
+        font-size: 1.5vw;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+        margin-top: 3vw;
+        margin-left: 1vw;
+        /* object-fit: cover; */
+    }
+    .name-overlay {
+        scale: 1;
+        position: absolute;
+        top: 45px;
+        left: 10px;
+        background-color: rgba(255, 253, 253, 0.7);
+        color: rgb(3, 3, 3);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .ex{
+        position: absolute;
+        width: 50%;
+        height: 20vh;
+        background-color: #fab8c4;
+        bottom: -1.5%;
+    }
+    .page-z{
+        margin-top: 85vw;
+    }
+    .aq{
+        font-size: 4vw;
+    }
+    .page{
+        height: 35vh;
+        margin-bottom: 5vw;
+    }
+
+    .page1{
+        height: 50vw;
+        margin-top: 35vw;
+    }
+    .page1 img {
+        display: none;
+    }
+    .ls{
+        height: 100%;
+        top: -6vw;
+    }
+    .slide{
+        width: 99%;
+    
+    }
+    .slide h2, span{
+        font-size: 1.5vw;
+    }
+    .st{
+        width: 48%;
+    }
+    
+    .rs > h1{
+        width: 60%;
+        font-size: 3vw;
+    }
+    .rs p{
+        width: 95%;
+        font-size: 1.5vw;
+    }
+    .org-card{
+        border-radius: 15px;
+    }
+    .org-card h4{
+        font-size: 1.5vw;
+    }
+    .org-card h3{
+        font-size: 2.5vw;
+    }
+    .org-card p{
+        width: 90%;
+    }
+    .btns{
+        font-size: 1.5vw;
+    }
+
+
+    .half-card{
+        margin-top: -5vw;
+        margin-right: 2vw;
+    }
+    /* .gr-bg{
+        height: 75vh;
+    } */
+    .goal-result{
+        /* height: 85vh; */
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .how-do-text > h1 span svg{
+        width: 8vw;
+    }
+    .next-cards{
+        /* height: 85vh; */
+        margin-top: 3vw;
+    }
+
+    #color-yellow{
+        font-size: 5vw;
+    }
+
+    .gr-bg{
+        /* height: 80vw; */
+        padding-bottom: 5vw;
+        margin-bottom: 3vw;
+        overflow: hidden;
+    }
+    /* .how-do-text{
+        height: 100%; */
+        /* margin-top: -45vw;
+    } */
+    .next-cards{
+        width: 55%;
+        /* height: 100%; */
+        padding-top: 8vw;
+    } 
+    .clients{
+        height: 35vw;
+        margin-top: 16vw;
+    }
+    .clients > h1{
+        font-size: 5vw;
+    }
+    .swiper-wrapper .swiper-slide {
+        height: 35vw;
+        padding: 0 1vw;
+      }
+    .img-co{
+        width: 50%;
+        height: 18vw;
+        border-radius: 9px;
+        margin-left: 1vw;
+    }
+    .hide{
+        opacity: 0;
+    }
+    .prev{
+        margin-left: -55vw;
+    }
+    .next{
+        margin-right: -55vw;
+    }
+
+    footer{
+        height: 55vw;
+        width: 100%;
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    footer .aqu svg{
+       display: none;
+    }
+    
+    footer .yell img{
+        height: 25vw;
+        position: absolute;
+        top: -1%;
+    }
+    
+    .white-line{
+        width: 30%;
+        height: 3vw;
+        background-color: white;
+        position: absolute;
+        left: 35%;
+        top: 20%;
+    }
+    .black-line{
+        width: 70%;
+        height: .2vw;
+        background-color: black;
+        position: absolute;
+        bottom: 8%;
+        left: 15%;
+    }
+    #shadow-host-companion{
+        display: none;
+    }
+}
