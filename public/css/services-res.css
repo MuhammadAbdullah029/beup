@@ -105,7 +105,7 @@
     }
     .left-side{
         width: 100%;
-        height: 85vh;
+        margin-bottom: 35vw;
     }
     .left-side h1{
         font-size: 5vw;
@@ -126,7 +126,7 @@
     }
     .cards{
         width: 98%;
-        height: 65%;
+        height: 86%;
         gap: 1vw;
         border-radius: 15px;
         -ms-flex-wrap: wrap;
@@ -136,7 +136,8 @@
     }
     .card{
         width: 35vw;
-        height: 58vw;
+        height: 100%;
+        /* height: 58vw; */
         border-radius: 10px;
         margin: 1vw;
         z-index: 33;
@@ -184,7 +185,7 @@
     }
     .btns{
         gap: 5vw;
-        top: 115vw;
+        top: 40%;
         left: 5vw;
     }
     .back{
@@ -199,16 +200,16 @@
     }
     .right-side{
         width: 100%;
-        margin-top: 8vw;
+        /* margin-top: 8vw; */
     }
       .swiper-slide {
         border-radius: 5px;
-        padding: 35vw 0;
       }
+      
     
       .move{
         left: .5vw;
-        bottom: 3vw;
+        bottom: -1vw;
         /* background-color: red; */
       }
 

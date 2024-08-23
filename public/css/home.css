@@ -15,6 +15,9 @@
 body{
     overflow-x: hidden;
 }
+.links{
+    display: none;
+}
 .goto-home{
     display: none;
 }
@@ -455,8 +458,9 @@ li a{
 /* page z */
 
 .page-z{
-    margin-top: 5vw;
     padding: 3vw;
+    margin-top: 5vw;
+    overflow: hidden;
 }
 
 .page-z .i-t {

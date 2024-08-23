@@ -333,6 +333,7 @@ li .nav-elem{
 .girl-img img{
     height: 38vw;
     margin-left: 3vw;
+    mix-blend-mode: color-burn;
 }
 .page1-text{
     width: 50%;

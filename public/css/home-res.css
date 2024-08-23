@@ -3,32 +3,25 @@
 @media (max-width: 600px) {
     
     .phone-menu{
-        bottom: 5vw;
-        right: 15vw;
+        display: none;
     }
-    .phone-menu ul{
+    .links{
+        top: 75vh;
+        right: 3vw;
+        z-index: 34;
+        display: block;
+        position: fixed;
+    }
+    .links ul{
+        gap: 1.5vw;
         display: flex;
         flex-direction: column;
-        gap: 2vw;
-        width: 100%;
     }
-    .phone-menu ul .p-list{
-        margin-top: .5vw;
-        position: relative;
-        right: -115vw;
-        color: #fff;
-        font-size: 1vw;
-        background-color: rgba(5, 5, 5, 0.514);
-        padding: .5vw;
-        width: 100%;
-        border-radius: 4px;
-    }
-    .phone-menu .p-img{
-        width: 13vw;
-        height: 13vw;
-    }
-    .phone-menu .p-img img{
-        height: 8vw;
+    .links ul li a{
+        padding: 1.5vw;
+        font-size: 3vw;
+        background: #00000083;
+        border-radius: 3px;
     }
     .loader h1{
         font-size: 19vw;
