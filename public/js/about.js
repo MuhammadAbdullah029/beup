@@ -12,79 +12,45 @@ let tl = gsap.timeline();
 tl.from(".logo", {
     x: -100,
     opacity: 0,
-    duration: .5,
+    duration: .3,
     delay: .5
 });
 
 tl.from("li", {
     y: -80,
     opacity: 0,
-    duration: .5,
+    duration: .3,
     stagger: .1
 }, "ani");
 
-tl.from(".welcome-text ", {
-    x:-33,
-    opacity: 0,
-    duration: .5,
-}, "ani");
-tl.from(".welcome-para", {
-    opacity: 0,
-    duration: .3,
-});
-tl.from(".welcome-btn", {
-    opacity: 0,
-    duration: .3,
-});
+tl.from(".left h1", {
+  y: -80,
+  opacity: 0,
+  duration: 1,
+  stagger: .3
+}, "a")
+tl.from(".left p", {
+  x: -80,
+  opacity: 0,
+  duration: 1,
+  stagger: .3
+}, "a")
 
-tl.from(".img", {
-    left: "50%",
-    opacity: 0,
-    duration: .5,
-    stagger: .1
-}, "ani");
-
-tl.from(".logo-tag", {
-    y: -33,
-    opacity: 0,
-    duration: .5,
-});
-
-gsap.from(".page1 .girl-img .g-img", {
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".page1 .girl-img .g-img",
-      scroller: ".main",
-      markers: true,
-      start: "top 60%",
-      end: "top 30%",
-      scrub: 2,
-    }
-  })
+tl.from(".right .box-1", {
+  x: 80,
+  opacity: 0,
+  duration: 1,
+  stagger: .3
+}, "b")
+tl.from(".right .box-2", {
+  x: -80,
+  opacity: 0,
+  duration: 1,
+  stagger: .3
+}, "b")
 
 
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const draggables = document.querySelectorAll(".draggable");
-  
-    draggables.forEach(element => {
-      const originalX = element.offsetLeft;
-      const originalY = element.offsetTop;
-  
-      Draggable.create(element, {
-        onDragEnd: function() {
-          gsap.to(this.target, {
-            x: originalX - this.target.offsetLeft,
-            y: originalY - this.target.offsetTop,
-            duration: 1,
-            ease: "elastic.out(1, 0.5)"
-          });
-        }
-      });
-    });
-  });
-  
+ 
   
 
   let menu = document.querySelector(".p-img");

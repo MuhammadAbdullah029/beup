@@ -103,32 +103,32 @@ tl.from(".left .paragraph", {
 
 let g = gsap
 
-g.from(".page-z .new-img", {
-  x: -195,
-  opacity: 0,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".page-z .new-img",
-    scroller: ".main",
-    // markers: true,
-    start: "top 90%",
-    end: "top 20%",
-    scrub: 2,
+// g.from(".page-z .new-img", {
+//   x: -195,
+//   opacity: 0,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: ".page-z .new-img",
+//     scroller: ".main",
+//     // markers: true,
+//     start: "top 90%",
+//     end: "top 20%",
+//     scrub: 2,
     
-  }
-})
-g.from(".page-z .sr", {
-  x: 195,
-  opacity: 0,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".page-z .sr",
-    scroller: ".main",
-    // markers: true,
-    start: "top 90%",
-    end: "top 30%",
-  }
-})
+//   }
+// })
+// g.from(".page-z .sr", {
+//   x: 195,
+//   opacity: 0,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: ".page-z .sr",
+//     scroller: ".main",
+//     // markers: true,
+//     start: "top 90%",
+//     end: "top 30%",
+//   }
+// })
 g.from(".page .cards .card .anim-img", {
   opacity: 0,
   duration: 1,

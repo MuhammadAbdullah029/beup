@@ -1,27 +1,34 @@
 
 
+
 @media (max-width: 600px) {
     
     .phone-menu{
         display: none;
     }
     .links{
-        top: 75vh;
+        top: 73vh;
         right: 3vw;
         z-index: 34;
         display: block;
         position: fixed;
     }
     .links ul{
-        gap: 1.5vw;
+        gap: 3vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .links ul li a{
         padding: 1.5vw;
         font-size: 3vw;
-        background: #00000083;
+        color: white;
         border-radius: 3px;
+        background: #00000083;
     }
     .loader h1{
         font-size: 19vw;
@@ -49,15 +56,15 @@
     
 
     .after-nav section{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .left{
         width: 100%;
-        height: 70vh;
-        /* background-color: white;
-        position: relative;
-        overflow: hidden;
-        padding-top: 13vw; */
+        height: 160vw;
+        padding-top: 7em;
     }
     .cir{
         height: 45vw;
@@ -66,8 +73,8 @@
         right: 80%;
     }
     .text{
-        margin-left: 7vw;
-        margin-top: 13vw;
+        margin-left: -1vw;
+        /* margin-top: 13vw; */
         
     }
     
@@ -76,83 +83,86 @@
         font-weight: 500;
         color: #1E2432;
         margin-top: 5vw;
-        border-bottom: 4px solid black;
-        width: fit-content;
-        display: inline-block;
+        text-align: center;
     }
-    .ml{
-        margin-left: 8vw;
-    }
-    .line{
-        display: none;
-    }
+    
     .paragraph{
         font-size: 5vw;
         line-height: 5vw;
         text-align: center;
-        margin-left: 10vw;
+        margin: 1.5em auto;
     }
     .cont{
         gap: 1vw;
-        margin-top: 4vw;
+        margin-top: 2vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-left: -3vw;
     }
     .cont .inn{
-        padding: 2vw;
+        padding: 2.5vw;
         height: 9vw;
         width: 33vw;
         font-size: 3vw;
     }
     
-    .cont button{
-        padding: 1.5vw;
-        height: 9vw;
-        width: 23vw;
+    .cont a{
+        padding: 1vw;
+        height: 11vw;
+        width: 35vw;
         border: none;
-        font-size: 3vw;
+        font-size: 4vw;
+        border-radius: 15px;
     }
 
     .right{
         width: 100%;
-        height: 60vh;
+        height: 100vmax;
         padding-top: 1vw;
     }
-    
+    .slide{
+        height: 100%;
+    }
     .slide img {
         width: 100%;
-        height: 55vh;
-        margin-top: 44vw;
+        height: 100%;
+        scale: 1.3;
+        margin-top: 3vmax;
     }
     .slide .fgg{
-        margin-top: 63vw;
-        margin-left: 4vw;
+        margin-top: 18vmax;
+        margin-left: 3vw;
+        scale: 1.4;
     }
     .slide .bhh{
-        margin-top: 38vw;
-        margin-left: 19vw;
+        scale: 1.8;
+        margin-top: 23vmax;
+        /* margin-left: 19vw; */
     }
     .slide .bjj{
-        scale: 1.7;
-        margin-top: 58vw;
-        margin-left: 9vw;
+        scale: 2.8;
+        margin-left: 1vw;
+        margin-top: 18vmax;
     }
     .text-overlay {
         position: absolute;
-        bottom: 200px;
-        left: 10px;
-        padding: 10px;
+        bottom: 15vmax;
+        left: 1vmax;
+        padding: 1em;
         border-radius: 5px;
     }
     .text-overlay h3{
         font-size: 3vw;
     }
     .name-overlay {
+        top: 5vmax;
+        scale: 1.5;
+        left: 13vmin;
         position: absolute;
-        top: 175px;
-        left: 10px;
-        scale: 1;
     }
     .first svg{
         height: 5vw;
@@ -181,9 +191,9 @@
     .ex{
         position: absolute;
         width: 100%;
-        height: 7vh;
+        height: 15vmin;
         background-color: #fab8c4;
-        bottom: -.5%;
+        bottom: 0%;
     }
     .next{
         min-height: 110vw;
@@ -194,9 +204,16 @@
     .fdev{
         width: 100%;
         height: 85%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         padding: 1vw;
         position: relative;
     }
@@ -214,9 +231,11 @@
         font-weight: 500;
         line-height: 9vw;
         text-align: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         margin-top: 4vw;
-        border-bottom: 3px solid black;
+        text-underline-offset: 2vw;
     }
     .left-text-para{
         width: 60%;
@@ -270,7 +289,7 @@
     }
     
     .page3{
-        margin-top: 115vw;
+        margin-top: 130vmin;
     }
     .page-z{
         margin-top: 5vw;
@@ -288,9 +307,16 @@
         width: 121%;
         font-size: 2.5vw;
     }
+    .page{
+        height: 215vw;
+        margin-bottom: 30vw;
+    }
     .page h1{
-        font-size: 5vw;
+        font-size: 7vw;
         margin-top: 5vw;
+        line-height: 11vw;
+        text-underline-offset: 2vw;
+
     }
     .page .te{
         width: 81%;
@@ -314,7 +340,8 @@
         width: 100%;
     }
     .card img{
-        height: 35vw;
+        height: 15vw;
+        width: 15vw;
     }
     .card img:hover{
         scale: 1.3;
@@ -353,9 +380,12 @@
         width: 100%;
         top: -9vw;
     }
-    .slide{
+    .slidee{
         width: 95%;
         margin-top: 3vw;
+    }
+    .slidee h2{
+        font-size: 3.5vw;
     }
     .steps span{
         font-size: 2.5vw;
@@ -443,7 +473,7 @@
         margin-left: -5vw;
     }
     .lead-and-sale{
-        height: 60vh;
+        height: 130vw;
         /* background-color: red; */
 
     }
@@ -506,6 +536,9 @@
         margin-top: -2.8vw;
         margin-right: 1.6vw;
     }
+    .zig{
+        display: none;
+    }
     .half-card > h1{
         font-size: 5vw;
     }
@@ -544,14 +577,15 @@
 
 
     .gr-bg{
-        height: 100vh;
+        height: 200vw;
         padding-bottom: 5vw;
+        padding-top: 5vw;
         margin-bottom: 3vw;
     }
     .goal-result{
         width: 90%;
         height: 90vh;
-        gap: 9vw;
+        gap: 19vw;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -577,8 +611,10 @@
     }
     .how-do-text > h1{
         font-size: 8vw;
-        margin-bottom: 2vw;
         position: relative;
+        margin-bottom: 2vw;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2vw;
     }
     
     .how-do-text > h1 span{
@@ -652,24 +688,52 @@
     }
 
     footer{
-        height: 27vh;
-        background-position: bottom;
+        gap: 3vw;
+        padding: 5vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        /* align-items: center; */
     }
-    footer .bg-f{
+    .div{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .div .imgg{
+        scale: 2;
+        height: 8vw;
+        width: 15.5vw;
+        margin-left: 8vw;
+        margin: 7vw;
+        margin-bottom: 8vw;
+    }
+    .imgg img{
+        height: 100%;
         width: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
-    footer .aqu svg{
-        display: none;
+    .div h4{
+        font-size: 5vw;
+        margin-bottom: 2vw;
     }
-    footer .yell img{
-        height: 25vw;
-        position: absolute;
-        top: -1%;
+    .div p{
+        font-size: 4vw;
+        font-weight: 400;
+        margin-bottom: 1vw;
+
     }
-    .white-line{
-        left: 35%;
-        top: 50%;
+    .div ul{
+        gap: 4vw;
+    }
+    .div a{
+        font-size: 3vw;
     }
 
 }
@@ -677,9 +741,34 @@
 /* Ipad and Tablet */
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    section{
-        height: 85vw;
+    .phone-menu{
+        display: none;
     }
+    .links{
+        top: 73vh;
+        right: 3vw;
+        z-index: 34;
+        display: block;
+        position: fixed;
+    }
+    .links ul{
+        gap: 3vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .links ul li a{
+        padding: 1.5vw;
+        font-size: 3vw;
+        color: white;
+        border-radius: 3px;
+        background: #00000083;
+    }
+    
     nav .logo img{
         height: 8vw;
     }
@@ -733,12 +822,15 @@
         height: 100%;
         top: -6vw;
     }
-    .slide{
+    .slidee{
         width: 99%;
     
     }
-    .slide h2, span{
-        font-size: 1.5vw;
+    .slidee h2{
+        font-size: 2vw;
+    }
+    .slidee span{
+        font-size: 2vw;
     }
     .st{
         width: 48%;
@@ -837,7 +929,6 @@
     }
 
     footer{
-        height: 55vw;
         width: 100%;
         background-position: bottom;
         background-size: 100%;

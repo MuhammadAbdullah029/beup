@@ -26,9 +26,15 @@ body{
     width: 100%;
     position: absolute;
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #02B59C;
     z-index: 336353;
 }
@@ -49,8 +55,13 @@ section{
     width: 5%;
 }
 .phone-menu ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1vw;
     width: 100%;
 }
@@ -66,10 +77,16 @@ section{
     border-radius: 4px;
 }
 .phone-menu .p-img{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: rgba(2, 2, 2, 0.514);
     width: 4vw;
     height: 4vw;
@@ -116,7 +133,7 @@ ul li{
     list-style: none;
 }
 li a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
     text-transform: uppercase;
     font-size: .95vw;
@@ -129,6 +146,8 @@ li a{
     /* background-color: red; */
 }
 .after-nav section{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* position: absolute;
     top: 0; */
@@ -139,12 +158,17 @@ li a{
     background-color: white;
     position: relative;
     overflow: hidden;
-    padding-top: 13vw;
+    padding-top: 10em;
 }
 .flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
 }
 .cir{
     height: 35vw;
@@ -160,11 +184,12 @@ li a{
     font-weight: 500;
     color: #1E2432;
     margin-top: 1vw;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
 }
-.line{
-    height: 3px;
-    background-color: #1E2432;
-}
+
 .left .a{
     width: 53%;
 }
@@ -177,16 +202,21 @@ li a{
 }
 .paragraph{
     width: 70%;
+    opacity: .7;
     margin-top: 5vw;
     font-size: 1.5vw;
     line-height: 1.8vw;
-    opacity: .7;
+    text-align: justify;
 }
 .cont{
     gap: 1vw;
     margin-top: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: -3vw;
 }
 .cont .inn{
@@ -201,7 +231,7 @@ li a{
     background-color: #F7F9FB;
 }
 
-.cont button{
+.cont a{
     padding: 1vw;
     height: 4.5vw;
     width: 13vw;
@@ -213,9 +243,15 @@ li a{
     font-weight: 800;
     color: white;
     cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
 }
-.cont button:hover{
+.cont a:hover{
     color: #1E2432;
     font-weight: 800;
     background-color: white;
@@ -225,9 +261,15 @@ li a{
     height: 100%;
     background-color: #74d7c3;
     padding-top: 7vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* overflow: hidden; */
 }
 .slider-container {
@@ -240,6 +282,8 @@ li a{
     width: 100%;
     height: 100%;
     position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
 }
@@ -251,7 +295,9 @@ li a{
     height: 100%;
     margin-top: 7vw;
     margin-left: 1vw;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
+    scale: 1.3;
 }
 .slide .fgg{
     margin-top: 11vw;
@@ -267,7 +313,7 @@ li a{
     position: absolute;
     left: 10px;
     bottom: 20px;
-    background-color: rgba(250, 247, 247, 0.7);
+    background-color: rgba(250, 247, 247, 0.801);
     color: rgb(12, 12, 12);
     padding: 10px;
     border-radius: 5px;
@@ -281,16 +327,22 @@ li a{
     position: absolute;
     top: 45px;
     left: -10px;
-    background-color: rgba(255, 253, 253, 0.7);
+    background-color: rgba(255, 253, 253, 0.808);
     color: rgb(3, 3, 3);
     padding: 10px;
     border-radius: 5px;
 }
 .first, .second, .third{
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 3vw;
     margin-top: .7vw;
 }
@@ -308,9 +360,16 @@ li a{
 .controls {
     width: 80%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
     background-color: #02b89f;
     padding: 1vw;
     gap: 1vw;
@@ -325,9 +384,15 @@ li a{
     height: 3vw;
     border-radius: 50%;
     rotate: 90deg;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .ex{
     position: absolute;
@@ -347,9 +412,15 @@ li a{
 .fdev{
     width: 100%;
     height: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 1vw;
 }
 .left-text{
@@ -362,6 +433,10 @@ li a{
     color: #1E2432;
     font-weight: 500;
     line-height: 4.5vw;
+    text-decoration: underline;
+    text-underline-offset: 1vw;
+    text-decoration-thickness: 3px;
+    text-transform: capitalize;
 }
 .d{
     width: 89%;
@@ -369,23 +444,19 @@ li a{
 .e{
     width: 71%;
 }
-.left-text-para{
-    opacity: .7;
-    margin-top: 3vw;
-    font-size: 1vw;
-    line-height: 1.5vw;
-    letter-spacing: 2px;
-}
+
 .card1{
     width: 30%;
     height: 85%;
     padding: 1vw;
     position: relative;
     border-radius: 5px;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 .bg{
-    background-color: rgb(230, 227, 227);
+    background-color: #F7F9FB;
 }
 .card1 h4{
     font-size: 2vw;
@@ -407,9 +478,15 @@ li a{
     border-radius: 50%;
     position: absolute;
     background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: .5vw;
 }
 .card1:hover p{
@@ -422,7 +499,10 @@ li a{
 .card1:hover .sv{
     width: 3.3vw;
     height: 3.3vw;
-    box-shadow: 2px 2px 5px rgb(29, 31, 31);
+    -webkit-box-shadow: 2px 2px 5px rgba(29, 31, 31, 0.349);
+            box-shadow: 2px 2px 5px rgba(29, 31, 31, 0.349);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
     transition: all .3s ease-out;
     background-color: rgb(230, 227, 227);
 }
@@ -432,9 +512,15 @@ li a{
     white-space: nowrap;
     overflow-x: hidden;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 13vw;
 }
 
@@ -449,7 +535,11 @@ li a{
     font-size: 8vw;
     color: #1E2432;
     font-weight: 700;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
 }
 
@@ -514,6 +604,11 @@ li a{
 }
 .page h1{
     font-size: 3vw;
+    text-decoration: underline;
+    text-underline-offset: 1vw;
+    text-decoration-thickness: 3px;
+    -webkit-text-decoration-color: #02B59C;
+            text-decoration-color: #02B59C;
 }
 .page .te{
     width: 71%;
@@ -534,19 +629,22 @@ li a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
+    /* -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+            align-items: center; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
+    /* -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
+            justify-content: center; */
 }
 .card img{
-    height: 15vw;
+    width: 6vw;
+    height: 5vw;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .card h3, p{
@@ -554,15 +652,15 @@ li a{
     padding: .5vw;
 }
 .card h3{
-    text-align: center;
-    margin-top: 3vw;
     width: 25vw;
+    font-size: 2.5vw;
+    margin-top: 3vw;
 }
 .card p{
     width: 73%;
     font-size: 1.3vw;
-    margin-left: 5vw;
     text-align: justify;
+    
 }
 
 
@@ -620,7 +718,8 @@ li a{
             box-shadow: 5px 5px 5px #e0dede;
     cursor: pointer;
 }
-.slide h2, span{
+.slidee h2{
+    font-size: 2.5vw;
     color: black;
 }
 .steps span{
@@ -951,7 +1050,7 @@ li a{
     position: absolute;
     bottom: -1vw;
     right: 33vw;
-    padding: 1vw;
+    padding: 1.5vw;
     background-color: black;
     border: none;
     cursor: pointer;
@@ -974,7 +1073,9 @@ li a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 5vw;
     /* margin-bottom: 3vw; */
     padding-top: 3vw;
@@ -999,6 +1100,9 @@ li a{
     font-size: 4vw;
     margin-bottom: 2vw;
     position: relative;
+    text-decoration: underline;
+    text-underline-offset: 1vw;
+    text-decoration-thickness: 3px;
 }
 
 .how-do-text > h1 span{
@@ -1031,7 +1135,7 @@ li a{
     padding-left: 3vw;
 }
 .bg-black{
-    background-color: black;
+    background-color: #02B59C;
 }
 .bg-black > p{
     color: white;
@@ -1114,67 +1218,101 @@ li a{
         border: 1px solid #02B59C;
         background-color: #ebf4f3;
         padding: 1vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     
     .img-co img{
         height: 15vw;
         width: 15vw;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
         /* mix-blend-mode: color-dodge; */
-    }
-     .ppp{
-        mix-blend-mode: color-burn;
     }
 /* footer */
 
 footer{
-    height: 95vh;
+    /* height: 25vh; */
     width: 100%;
-    margin-top: 15vw;
-    position: relative;
-    overflow: hidden;
-    /* background-image: url(/assert/home/bg-footer.png);
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat; */
+    padding: 3vw 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* align-items: center; */
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #f7f9fb;
 }
-footer .bg-f{
+.div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+}
+.div > a{
+    text-decoration: none;
+    color: #000;
+}
+.div .imgg{
+    height: 8vw;
+    width: 8vw;
+    margin-bottom: -3vw;
+}
+.imgg img{
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    margin-top: -1.5vw;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
-footer .aqu svg{
-    height: 45vw;
-    rotate: -90deg;
-    position: absolute;
-    right: -58vw;
-    top: -3vw;
-    overflow: hidden;
+.div h4{
+    color: black;
+    font-size: 1.8vw;
 }
-
-footer .yell img{
-    height: 21vw;
-    position: absolute;
-    top: -1%;
-    left: 1%;
+.div p{
+    color: black;
+    font-size: 1.1vw;
+    font-weight: 400;
 }
-.white-line{
-    width: 30%;
-    height: 3vw;
-    background-color: white;
-    position: absolute;
-    left: 35%;
-    top: 20%;
+.div p:hover{
+    color: #03b59d;
 }
-.black-line{
-    width: 70%;
-    height: .2vw;
-    background-color: black;
-    position: absolute;
-    bottom: 8%;
-    left: 15%;
+.div ul{
+    gap: 1.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+ul li{
+    list-style: none;
+}
+li a{
+    color: black;
+    text-decoration: none;
+}
+.div a:hover{
+    color: #03b59d;
+}
+.gr{
+    font-weight: 400;
+    font-size: .9vw;
+    opacity: .7;
 }
 #shadow-host-companion{
     display: none;

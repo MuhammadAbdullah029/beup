@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="/public/css/contact.css">
     <link rel="shortcut icon" href="/assert/home/221 (1).png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <title>Contact Us | beup</title>
+    <title>Contact Us | beupoutsourcing</title>
 </head>
 <body>
     <div class="phone-menu">
         <ul>
+            <li><a class="p-list" href="/index.html">Home</a></li>
             <li><a class="p-list" href="/about.html">about</a></li>
                 <li><a class="p-list" href="/services.html">services</a></li>
-                <li><a class="p-list" href="#">clientReview</a></li>
-                <li><a class="p-list" href="#">learn</a></li>
+                <li><a class="p-list" href="/blogs.html">Blogs</a></li>
             <li><a class="p-list" href="/contact.html">contactUs</a></li>
         </ul>
         <div class="p-img">
@@ -31,10 +31,10 @@
             </div>
             <div class="nav-elems">
                 <ul>
+                    <li><a class="nav-elem" href="/index.html">Home</a></li>
                     <li><a class="nav-elem" href="/about.html">about</a></li>
                     <li><a class="nav-elem" href="/services.html">services</a></li>
-                    <li><a class="nav-elem" href="#">client review</a></li>
-                    <li><a class="nav-elem" href="#">learn</a></li>
+                    <li><a class="nav-elem" href="/blogs.html">Blogs</a></li>
                     <li><a class="nav-elem" href="/contact.html">contact us</a></li>
                 </ul>
             </div>
@@ -43,27 +43,28 @@
             <div class="one ">
                 <div class="elem-text ff">
                 <h1>Let’s scale your <br> brand, together</h1>
-                <h4>Reach out at <span class="under" >beupsourcing@gmail.com</span></h4>
+                <h4>Reach out at <span class="under" >beupoutsourcing@gmail.com</span></h4>
                 </div>
                 <img src="/assert/contact/icon_6.svg" alt="">
             </div>
             <div class="two">
-                <form action="#">
+                <form action="https://formsubmit.co/beupoutsourcing@gmail.com" method="POST">
                     <div class="elem-text hid">
                         <h1>Let’s scale your brand, together</h1>
-                        <h4>Reach out at <span class="under" >beupsourcing@gmail.com</span></h4>
+                        <h4>Reach out at <span class="under" >beupoutsourcing@gmail.com</span></h4>
                         </div>
                     <label for="name">Name <span class="aq" >*</span></label>
-                    <input type="text" placeholder="Type Name" >
-                    <label for="name">Company <span class="aq" >*</span></label>
-                    <input type="text" placeholder="Type Company Name" >
-                    <label for="name">Phone</label>
-                    <input type="number" placeholder="Type Phone Number" >
-                    <label for="name">Email Address <span class="aq" >*</span></label>
-                    <input type="email" placeholder="Type Email Address" >
-                    <label for="name">How can we help? <span class="aq" >*</span></label>
-                    <input type="text" placeholder="A brief description here" >
-                    <label class="ser" for="name">Services <span class="aq" >*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Type Name" >
+                    <label for="company">Company <span class="aq" >*</span></label>
+                    <input type="text" id="company" name="Company" placeholder="Type Company Name (Optional)" >
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" name="Phone" required placeholder="Type Phone Number" >
+                    <label for="email">Email Address <span class="aq" >*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="Type Email Address" >
+                    <label for="msg">How can we help? <span class="aq" >*</span></label>
+                    <textarea type="text" id="msg" name="Message" required placeholder="A brief description here" ></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <label class="ser">Services <span class="aq" >*</span></label>
                     <div class="service">
                         <div class="gg">
                             <div class="g">
@@ -82,7 +83,7 @@
                             </div>
                             </div>
                     </div>
-                    <button>Send message</button>
+                    <button type="submit" >Send message</button>
                 </form>
             </div>
         </div>
@@ -91,13 +92,13 @@
                 <h1>A Remote Company <br>
                     HQ'd out of Dumbo, <br>
                     Brooklyn.</h1>
-                <div class="con">
+                <!-- <div class="con">
                     <img src="/assert/contact/icon_contact_1.svg" alt="">
                     <p>(347) 619-3312</p>
-                </div>
+                </div> -->
                 <div class="con">
                     <img src="/assert/contact/icon_contact_2.svg" alt="">
-                    <p>beupsourcing@gmail.com</p>
+                    <p>beupoutsourcing@gmail.com</p>
                 </div>
             </div>
             <img src="/assert/contact/icon_27.svg" class="i" alt="">
@@ -123,17 +124,19 @@
             <img src="/assert/home/Untitled-1.png" alt="">
         </div>
             <p>San Francisco California Inited State</p>
-            <p>(347) 619-3312 <br>
-                beupsourcing@gmail.com</p>
-            <p class="gr" >Please note: Lilo Social will never reach out via <br> other channels, except from our official <br> company email.</p>
+            <p>
+                beupoutsourcing@gmail.com</p>
+            <p class="gr" >Please note: beUp will never reach out via <br> other channels, except from our official <br> company email.</p>
         </div>
         <div class="div">
         <h4>Info</h4>
-            <p>Home</p>
-            <p>Services</p>
-            <p>About</p>
-            <p>Careers</p>
-            <p>Contact</p>
+        <ul>
+            <li><a class="p-list" href="/index.html">Home</a></li>
+            <li><a class="p-list" href="/about.html">about</a></li>
+                <li><a class="p-list" href="/services.html">services</a></li>
+                <li><a class="p-list" href="/blogs.html">Blogs</a></li>
+            <li><a class="p-list" href="/contact.html">contactUs</a></li>
+        </ul>
         </div>
         <div class="div">
             <h4>Resources</h4>
@@ -141,9 +144,9 @@
         </div>
         <div class="div">
             <h4>Follow us</h4>
-                <p>Linkedin</p>
-                <p>Dribbble</p>
-                <p>Instagram</p>
+                <a href="https://www.linkedin.com/company/be-up-outsourcing/" >Linkedin</a>
+                <a href="https://www.facebook.com/profile.php?id=61562291095771" >Facebook</a>
+                <a href="https://dribbble.com/beupoutsourcing/" >Dribbble</a>
         </div>
     </footer>
 </main>

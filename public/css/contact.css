@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: gili;
     src: url(/assert/fonts/Gilroy-Regular.ttf);
@@ -22,8 +24,13 @@
     width: 5%;
 }
 .phone-menu ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1vw;
     width: 100%;
 }
@@ -40,11 +47,17 @@
     text-decoration: none;
 }
 .phone-menu .p-img{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(2, 2, 2, 0.514);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(5, 5, 5, 0.514);
     width: 4vw;
     height: 4vw;
     padding: 1vw;
@@ -101,6 +114,8 @@ li .nav-elem:hover{
 }
 
 .flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* height: 100vh; */
     width: 100%;
@@ -109,10 +124,19 @@ li .nav-elem:hover{
 .one{
     width: 50%;
     /* height: 100%; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .one .elem-text h1{
     font-size: 3.5vw;
@@ -125,8 +149,11 @@ li .nav-elem:hover{
 }
 .under{
     color: gray;
-    text-decoration-line: underline;
-    text-decoration-color: #03b59d;
+    text-underline-offset: 1vw;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    -webkit-text-decoration-color: #03b59d;
+            text-decoration-color: #03b59d;
     text-decoration-thickness: 1.5px;
 }
 .under:hover{
@@ -138,12 +165,21 @@ li .nav-elem:hover{
 .two{
     width: 50%;
     /* height: 100%; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;  
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;  
 }
 form{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 form label{
     opacity: .8;
@@ -154,7 +190,7 @@ form label .aq{
     color: #03b59d;
     font-size: 1.5vw;
 }
-form input{
+form input, textarea{
     border: none;
     width: 30vw;
     outline: none;
@@ -167,11 +203,18 @@ form input:focus{
     border-bottom: 1px solid #03b59d;
 }
 .service{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 2vw;
 }
 .service input{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin-right: 1vw;
 }
@@ -180,6 +223,8 @@ form input:focus{
 }
 .gg{
     margin-top: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 3vw;
 }
@@ -192,6 +237,8 @@ form button{
     border-radius: 5px;
     font-size: 1.3vw;
     background-color: #03b59d;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 form button:hover{
@@ -206,6 +253,8 @@ form button:hover{
     overflow: hidden;
     background-color: #F4EAE1;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .pos .i{
@@ -214,8 +263,13 @@ form button:hover{
     /* margin-left: 18vw; */
 }
 .pos .pos-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1.5vw;
     width: 30%;
     margin-top: 10vw;
@@ -227,30 +281,47 @@ form button:hover{
 }
 .con{
     gap: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* background-color: red; */
 }
 .con img{
     height: 2vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 .con p{
     font-size: 1.5vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
 .w-80{
     height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #1D1916;
 }
 .a-box{
     width: 50%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-left: 5vw;
 } 
 .a-box h1{
@@ -301,9 +372,15 @@ form button:hover{
 .b-box{
     width: 50%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .b-box img{
     width: 90%;
@@ -314,31 +391,68 @@ footer{
     /* height: 25vh; */
     width: 100%;
     padding: 3vw 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* align-items: center; */
-    justify-content: space-between;
-    background-color: #F4EAE1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #f7f9fb;
 }
 .div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1vw;
 }
 .div .imgg{
     height: 8vw;
     width: 8vw;
+    margin-bottom: -3vw;
 }
 .imgg img{
-    margin-top: -1.5vw;
-    height: 100%;
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    margin-top: -1.5vw;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
-.div p{
+.div h4{
+    color: black;
+    font-size: 1.8vw;
+}
+.div p, a{
+    color: black;
     font-size: 1.1vw;
     font-weight: 400;
+    text-decoration: none;
 }
 .div p:hover{
+    color: #03b59d;
+}
+.div ul{
+    gap: 1.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+ul li{
+    list-style: none;
+}
+.div li a{
+    color: black;
+    text-decoration: none;
+}
+.div a:hover{
     color: #03b59d;
 }
 .gr{
@@ -356,8 +470,13 @@ footer{
         right: 15vw;
     }
     .phone-menu ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .phone-menu ul .p-list{
         font-size: 3vw;
@@ -380,7 +499,10 @@ footer{
         display: none;
     }
     .flex{
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     .hid{
         display: block;
@@ -402,7 +524,7 @@ footer{
         margin-left: 15vw;
         margin-top: 3vw;
     }
-    form input{
+    form input, textarea {
         width: 70%;
         font-size: 3vw;
         margin-left: 15vw;
@@ -413,14 +535,22 @@ footer{
     }
     .service{
         margin-top: 3vw;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .service label{
         margin-left: 1vw;
     }
     .gg{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     form label .aq{
         font-size: 5vw;
@@ -435,8 +565,11 @@ footer{
     }
     .one{
         width: 100%;
-        height: 50vh;
-        justify-content: center;
+        height: 90vw;
+        margin-top: 5vw;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .ff{
         display: none;
@@ -445,9 +578,14 @@ footer{
         height: 50vw;
     }
     .pos{
-        height: 80vh;
+        height: 140vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .pos .pos-text{
         width: 100%;
@@ -466,12 +604,18 @@ footer{
         font-size: 3vw;
     }
     .w-80{
-        height: 80vh;
-        flex-direction: column;
+        height: 140vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .a-box{
         width: 100%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-left: 8vw;
     } 
     .a-box h1{
@@ -508,22 +652,40 @@ footer{
     footer{
         gap: 3vw;
         padding: 8vw;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         /* align-items: center; */
     }
     .div{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 3vw;
     }
     .div .imgg{
         height: 8vw;
         width: 15.5vw;
     }
+    .div h4{
+        font-size: 4vw;
+    }
     .imgg img{
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+    .div > a{
+        font-size: 3vw;
+    }
+    .div ul li a{
+        font-size: 3vw;
     }
     .div p{
         font-size: 3vw;

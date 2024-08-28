@@ -12,8 +12,13 @@
         right: 15vw;
     }
     .phone-menu ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .phone-menu ul .p-list{
         font-size: 2.5vw;
@@ -35,73 +40,67 @@
     nav ul li a{
         display: none;
     }
-    .page{
-        height: 80vh;
+    .after-nav section{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
-    .heading{
-        width: 95%;
-        font-size: 5vw;
-        margin-top: 1vw;
+    .after-nav .left{
+        width: 100%;
+        height: 150vw;
     }
-    .p1{
-        margin: 5vw 0;
-        font-size: 3vw;
+    .text{
+        margin-left: 0;
     }
-    .input{
-        width: 65vw;
-        height: 6vw;
-        margin-top: 7vw;
-    }
-    .imgs{
-        height: 35vh;
-        width: 85vw;
-        /* background-color: red; */
-    }
-    .sm-img{
-        width: 6vw;
-        height: 6vw;
-        border-radius: 50%;
-    }
-    .med-img{
-        width: 8vw;
-        height: 8vw;
-        border-radius: 50%;
-    }
-    .lg-img{
-        width: 10vw;
-        height: 10vw;
-        border-radius: 50%;
-    }
-    .po1{
-        top: 6vw;
-        left: -.5vw;
-    }
-    .po2{
-        top: 6vw;
-        right: -.5vw;
-    }
-    .po3{
-        top: 41vw;
-        left: -5vw;
-    }
-    .po4{
-        top: 41vw;
-        right: -5vw;
+    .left h1{
+        font-size: 13vw;
+        text-align: center;
     }
     
-    .po5{
-        top: 41vw;
-        left: 8vw;
+    .paragraph{
+        width: 80%;
+        margin: auto;
+        margin-top: 7vw;
+        font-size: 6vw;
+        line-height: 5vw;
+        text-align: center;
     }
-    .po6{
-        top: 41vw;
-        right: 8vw;
+    .cont{
+        gap: 3vw;
+        margin-top: 8vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: -3vw;
+    }
+    
+    
+    .cont a{
+        height: 12vw;
+        width: 35vw;
+        font-size: 4vw;
+        border-radius: 25px;
+    }
+    .after-nav .right{
+        width: 100%;
+        height: 110vw;
+    }
+    .after-nav .right img{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        margin-left: -1vw;
     }
     .page1{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+                height: 210vw;
     }
     .left-side{
         width: 100%;
@@ -119,9 +118,17 @@
     .scroller-content {
         width: 100%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
     .cards{
@@ -174,9 +181,7 @@
         /* background-color: red; */
     }
     .img-c .hp{
-        height: 21vw;
-        top: -.5vw;
-        left: -5vw;
+        height: 11vw;
     }
     .check{
         height: 6vw;
@@ -185,7 +190,7 @@
     }
     .btns{
         gap: 5vw;
-        top: 40%;
+        top: 85vmin;
         left: 5vw;
     }
     .back{
@@ -209,15 +214,33 @@
     
       .move{
         left: .5vw;
-        bottom: -1vw;
+        bottom: -2vw;
+        display: none;
         /* background-color: red; */
       }
 
       .page2{
         padding: 7vw;
+        /* margin-top: 37vmin; */
+        /* background-color: red; */
+    }
+    .p2-flex{
+        gap: 1vw;
+        width: 100%;
+        padding: 1vw;
+        margin: auto;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
     .paras{
         margin-top: 6vw;
+    }
+    .paras img{
+        width: 15vw;
+        height: 15vw;
+        margin-bottom: 5vw;
     }
     .paras > h1, p{
         color: black;
@@ -227,25 +250,53 @@
         text-align: justify;
     }
 
-      footer{
-        height: 27vh;
-        background-position: bottom;
+    footer{
+        gap: 3vw;
+        padding: 5vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        /* align-items: center; */
     }
-    footer .bg-f{
+    .div{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .div .imgg{
+        scale: 2;
+        height: 8vw;
+        width: 15.5vw;
+        margin-left: 8vw;
+        margin: 7vw;
+        margin-bottom: 8vw;
+    }
+    .imgg img{
+        height: 100%;
         width: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
-    footer .aqu svg{
-        display: none;
+    .div h4{
+        font-size: 5vw;
+        margin-bottom: 2vw;
     }
-    footer .yell img{
-        height: 25vw;
-        position: absolute;
-        top: -1%;
+    .div p{
+        font-size: 4vw;
+        font-weight: 400;
+        margin-bottom: 1vw;
+
     }
-    .white-line{
-        left: 35%;
-        top: 50%;
+    .div ul{
+        gap: 4vw;
+    }
+    .div a{
+        font-size: 3vw;
     }
 
 }
@@ -305,7 +356,7 @@
     
 
     .page1{
-        height: 100vh;
+        height: 40vh;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -336,13 +387,15 @@
         text-align: justify;
     }
     .btns{
-        top: 55vw;
+        bottom: -2vw;
     }
     /* .right-side{
         background-color: red;
     } */
     .swiper-slide {
         border-radius: 25px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
       }
       .swiper {
