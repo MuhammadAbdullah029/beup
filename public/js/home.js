@@ -82,12 +82,7 @@ tl.from(".left .text h1", {
   duration: .3,
   stagger: .1
 }, "a");
-tl.from(".left .text .line", {
-  y: -85,
-  opacity: 0,
-  duration: .3,
-  stagger: .1
-}, "a");
+
 tl.from(".right .slider-container", {
   x: "100%",
   opacity: 0,
@@ -96,7 +91,12 @@ tl.from(".right .slider-container", {
 });
 tl.from(".left .paragraph", {
   opacity: 0,
-  duration: .5,
+  duration: .3,
+  stagger: .1
+});
+tl.from(".left .cont", {
+  opacity: 0,
+  duration: .3,
   stagger: .1
 });
 

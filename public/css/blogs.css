@@ -81,8 +81,8 @@ nav{
         -ms-flex-pack: justify;
             justify-content: space-between;
     z-index: 333;
-    /* position: absolute;
-    top: 0; */
+    position: absolute;
+    top: 0;
 }
 nav .logo img{
     height: 5vw;
@@ -101,23 +101,155 @@ ul li{
     list-style: none;
 }
 li .nav-elem{
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: .95vw;
-    font-weight: 600;
+    font-weight: 500;
 }
-
 .page{
     width: 100%;
     height: 100vh;
-    text-align: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    display: flex;
+    position: relative;
+    background-color: #03b59d;
 }
-.page h1{
-    font-size: 11vw;
+.page .arrenge-circle{
+    height: 30vw;
+    position: absolute;
+    top: -25%;
+    right: -18%;
 }
+.pink-rect{
+    width: 60vw;
+    height: 45vh;
+    left: -15vw;
+    position: absolute;
+    background-color: #fab8c4;
+}
+.aq-rect{
+    bottom: 0;
+    left: -9vw;
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    background-color: #74D7C3;
+}
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left img{
+    height: 25vw;
+    z-index: 333;
+}
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right h1{
+    font-size: 6vw;
+    color: white;
+    font-weight: 100;
+    text-decoration: underline;
+    text-underline-offset: 1vw;
+    text-decoration-thickness: 3px;
+}
+
+.page1{
+    height: 100vh;
+    padding: 5vw;
+}
+.page1 h2{
+    font-size: 3vw;
+    font-weight: 100;
+}
+.page1 .textandimg{
+    gap: 3vw;
+    display: flex;
+    margin-top: 3vw;
+}
+.textandimg p{
+    width: 70%;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+}
+.rect{
+    width: 80%;
+    margin: auto;
+    height: 15vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #03b59d;
+}
+.yellow-circle{
+    height: 15vw;
+    position: absolute;
+    bottom: -90%;
+    right: -10%;
+}
+.pink-circle{
+    position: absolute;
+    right: 8%;
+    top: 7%;
+    scale: 1.4;
+
+}
+.page2{
+    height: 98vh;
+    padding: 5vw;
+}
+.page2 h1{
+    font-size: 4vw;
+    font-weight: 100;
+}
+.page2 p{
+    width: 80%;
+    margin-top: 5vw;
+    font-size: 1.5vw;
+    /* line-height: 1.5vw; */
+    text-align: justify;
+}
+.blogs-section{
+    height: auto;
+    padding: 5vw;
+}
+.art{
+    font-size: 5vw;
+}
+.blogs{
+    height: auto;
+}
+.content h1{
+    margin-top: 2vw;
+}
+.text{
+    height: auto;
+    margin-top: 2vw;
+    font-size: 1.5vw;
+}
+.more-text {
+    display: none;
+    font-size: 1.5vw;
+  }
+ .read-more-btn {
+    border: none;
+    padding: 10px;
+    outline: none;
+    color: white;
+    margin-top: 1vw;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #03b59d;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #007566;
+  }
 footer{
     /* height: 25vh; */
     width: 100%;
@@ -240,15 +372,134 @@ li a{
     nav ul li .nav-elem{
         display: none;
     }
-
+    
     .page{
-        /* height: 100vh; */
-        padding-top: 30vh;
-        padding-bottom: 30vh;
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: column-reverse;
     }
-    .page h1{
+    .page .arrenge-circle{
+        display: none;
+    }
+    .pink-rect{
+        width: 80vw;
+        height: 45vw;
+        left: -15vw;
+        position: absolute;
+        background-color: #fab8c4;
+        display: none;
+    }
+    .aq-rect{
+        bottom: 0;
+        left: -9vw;
+        width: 30vw;
+        height: 30vh;
+        position: absolute;
+        background-color: #74D7C3;
+        display: none;
+    }
+    .left{
+        width: 100%;
+        height: 85vw;
+    }
+    .left img{
+        z-index: 33;
+        height: 60vw;
+        border-radius: 5px;
+    }
+    .right{
+        width: 100%;
+        height: 120vw;
+        padding-top: 15vw;
+    }
+    .right h1{
+        color: white;
+        font-size: 11vw;
+        font-weight: 100;
+        text-align: left;
+    }
+    
+    .page1{
+        height: 110vw;
+        padding: 5vw;
+        padding-top: 11vw;
+    }
+    .page1 h2{
+        font-size: 5vw;
+    }
+    .page1 .textandimg{
+        margin-top: 5vw;
+    }
+    .textandimg p{
+        font-size: 3vw;
+    }
+    .textandimg img{
+        height: 8vw;
+    }
+    .rect{
+        height: 15vw;
+    }
+    .yellow-circle{
+        height: 25vw;
+        bottom: -40%;
+        right: -13%;
+    }
+    .pink-circle{
+        position: absolute;
+        right: 18%;
+        top: -22%;
+        scale: .8;
+    
+    }
+    .page2{
+        height: 160vw;
+        padding: 5vw;
+    }
+    .page2 h1{
         font-size: 8vw;
     }
+    .page2 p{
+        width: 80%;
+        margin-top: 5vw;
+        font-size: 3vw;
+        /* line-height: 3.5vw; */
+    }
+
+    .blogs-section{
+        height: auto;
+        padding: 5vw;
+    }
+    .art{
+        font-size: 8vw;
+        margin-bottom: 5vw;
+    }
+    .blogs{
+        height: auto;
+    }
+    .content h1{
+        font-size: 5vw;
+        margin-top: 2vw;
+    }
+    .text{
+        margin-top: 4vw;
+        font-size: 4vw;
+    }
+    .more-text {
+        display: none;
+        font-size: 4vw;
+      }
+     .read-more-btn {
+        padding: 7px;
+        color: white;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+      }
+      
+      .read-more-btn:hover {
+        background-color: #007566;
+      }
+      
 
     footer{
         gap: 3vw;
@@ -296,7 +547,7 @@ li a{
         gap: 4vw;
     }
     .div a{
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
 }

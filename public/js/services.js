@@ -44,7 +44,7 @@ const container = document.querySelector('.scroller-container');
         content.innerHTML += content.innerHTML;
 
         let scrollAmount = 0;
-        const step = 0.5; // Adjust for faster/slower scrolling
+        const step = 0.7; // Adjust for faster/slower scrolling
         let isScrolling = true;
         let animationFrameId = null;
 

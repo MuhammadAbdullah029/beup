@@ -455,6 +455,9 @@ li a{
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+.card1 img{
+    height: 5vw;
+}
 .bg{
     background-color: #F7F9FB;
 }
@@ -1230,8 +1233,8 @@ li a{
     }
     
     .img-co img{
-        height: 15vw;
-        width: 15vw;
+        height: 10vw;
+        width: 10vw;
         -o-object-fit: contain;
            object-fit: contain;
         /* mix-blend-mode: color-dodge; */

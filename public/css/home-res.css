@@ -112,11 +112,11 @@
     
     .cont a{
         padding: 1vw;
-        height: 11vw;
-        width: 35vw;
+        height: 13vw;
+        width: 45vw;
         border: none;
         font-size: 4vw;
-        border-radius: 15px;
+        border-radius: 5px;
     }
 
     .right{
@@ -249,6 +249,27 @@
         height: 45vw;
         padding: 3vw;
     }
+    .card1 img{
+        height: 11vw;
+    }
+    .card1 .sv{
+        width: 4vw;
+        height: 4vw;
+        padding: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card1:hover .sv{
+        width: 4.3vw;
+        height: 4.3vw;
+        -webkit-box-shadow: 2px 2px 5px rgba(29, 31, 31, 0.288);
+                box-shadow: 2px 2px 5px rgba(29, 31, 31, 0.281);
+        -webkit-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        background-color: rgba(230, 227, 227, 0.644);
+    }
     .card1 h4{
         font-size: 4vw;
     }
@@ -257,9 +278,7 @@
         font-size: 3vw;
         display: none;
     }
-    .card1 svg{
-        height: 20vw;
-    }
+    
     .card1:hover{
         height: 56vw;
         background-color: white;

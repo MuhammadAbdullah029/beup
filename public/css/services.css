@@ -487,8 +487,48 @@ li a{
     width: 80%;
     text-align: justify;
 }
-
-
+.services-new{
+    height: 100vh;
+    display: flex;
+    margin-top: 2vw;
+    overflow: hidden;
+}
+.con-img{
+    width: 50%;
+    height: 100%;
+}
+.con-img img{
+    width: 100%;
+    height: 100%;
+    scale: 1.1;
+    /* object-fit: contain; */
+}
+.cover{
+    object-fit: cover;
+}
+.serrr{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+}
+.serrr h1{
+    color: #000;
+    font-size: 5vw;
+    text-decoration: underline;
+    text-underline-offset: 1.5vw;
+    text-decoration-thickness: 3px;
+}
+.serrr p{
+    width: 70%;
+    color: gray;
+    font-size: 1.3vw;
+    margin-top: 3vw;
+}
+.mb{
+    margin-bottom: 8vw;
+}
  /* footer */
 
  footer{

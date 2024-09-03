@@ -23,4 +23,20 @@ let menu = document.querySelector(".p-img");
     });
   }
     
-  })
+  });
+
+
+  document.querySelectorAll('.read-more-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const moreText = this.previousElementSibling;
+      if (moreText.style.display === "none" || moreText.style.display === "") {
+        moreText.style.display = "block";
+        this.textContent = "Read Less";
+      } else {
+        moreText.style.display = "none";
+        this.textContent = "Read More";
+      }
+    });
+  });
+  
+  
