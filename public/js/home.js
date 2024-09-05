@@ -101,35 +101,7 @@ tl.from(".left .cont", {
 });
 
 
-let g = gsap
-
-// g.from(".page-z .new-img", {
-//   x: -195,
-//   opacity: 0,
-//   duration: 1,
-//   scrollTrigger: {
-//     trigger: ".page-z .new-img",
-//     scroller: ".main",
-//     // markers: true,
-//     start: "top 90%",
-//     end: "top 20%",
-//     scrub: 2,
-    
-//   }
-// })
-// g.from(".page-z .sr", {
-//   x: 195,
-//   opacity: 0,
-//   duration: 1,
-//   scrollTrigger: {
-//     trigger: ".page-z .sr",
-//     scroller: ".main",
-//     // markers: true,
-//     start: "top 90%",
-//     end: "top 30%",
-//   }
-// })
-g.from(".page .cards .card .anim-img", {
+gsap.from(".page .cards .card .anim-img", {
   opacity: 0,
   duration: 1,
   stagger: .5,
@@ -204,4 +176,58 @@ const container = document.getElementById('scrolling-container');
         setInitialPosition();
         animate();
 
-        
+
+
+//Before Client Slider
+
+function beforeClients() {
+  const images = document.querySelectorAll('.image-slider-before-client img');
+const texts = document.querySelectorAll('.text-slider-before-client p');
+let currentIndex = 0;
+let interval;
+
+function showSlide(index) {
+    images.forEach((img, i) => {
+        img.classList.remove('active');
+        texts[i].classList.remove('active-text');
+        if (i === index) {
+            img.classList.add('active');
+            texts[i].classList.add('active-text');
+        }
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showSlide(currentIndex);
+}
+
+document.getElementById('next').addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+});
+
+function startAutoSlide() {
+    interval = setInterval(nextSlide, 7000);
+}
+
+function resetInterval() {
+    clearInterval(interval);
+    startAutoSlide();
+}
+
+startAutoSlide();
+
+}
+
+beforeClients();

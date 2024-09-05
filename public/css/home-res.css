@@ -595,89 +595,64 @@
     }
 
 
-    .gr-bg{
-        height: 200vw;
-        padding-bottom: 5vw;
-        padding-top: 5vw;
-        margin-bottom: 3vw;
-    }
-    .goal-result{
-        width: 90%;
-        height: 90vh;
-        gap: 19vw;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin-bottom: 3vw;
-        padding-top: 6vw;
-    }
-    .how-do-text{
-        width: 100%;
-        height: 45%;
-        gap: 3vw;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        padding-left: 3vw;
-    }
-    .how-do-text > h1{
-        font-size: 8vw;
-        position: relative;
-        margin-bottom: 2vw;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 2vw;
-    }
-    
-    .how-do-text > h1 span{
-        width: 40%;
-        top: -3vw;
-        left: 55vw;
-    }
-    .how-do-text > h1 span svg{
-        width: 40%;
-    }
-    .how-do-text > p{
-        margin-bottom: 2vw;
-    }
-    .how-do-text .btn{
-        font-size: 3vw;
-        font-weight: 600;
-        padding: 2vw 2.5vw;
-        width: 35%;
-    }
-    .next-cards{
-        width: 100%;
-        /* height: 65vh; */
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        gap: 3vw;
-        padding-left: 3vw;
-        margin-top: -8vw;
-    }
-    .first-two-card .cardof{
-        height: 40vw;
-        width: 36vw;
-        padding: 2vw;
-        border-radius: 8px;
-        margin-top: 2vw;
-    }
-    .cardof .img{
-        height: 12vw;
-        width: 35%;
-    }
-    .cardof > p{
-        font-size: 2.5vw;
-    }
+    /* Before Clients */
+.before-clients{
+    height: 160vw;
+}
 
+.slider-container-before-cleints {
+    flex-direction: column;
+}
+
+.image-slider-before-client {
+    width: 100%;
+}
+
+
+.text-slider-before-client {
+    width: 100%;
+    height: 55%;
+}
+
+.text-slider-before-client p {
+    padding: 3vw;
+    color: #fff;
+    display: none;
+    font-size: 5vw;
+    text-align: justify;
+}
+
+.text-slider-before-client p.active-text {
+    display: block;
+}
+.text-slider-before-client .right-bottom-img{
+    position: absolute;
+    right: -25vw;
+    bottom: -25vw;
+    height: 53vw;
+}
+
+.controls-before-client {
+    gap: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.controls-before-client button {
+    height: 8vw;
+    width: 8vw;
+    font-size: 3vw;
+}
+#prev{
+    rotate: 0deg;
+}
+#next{
+    rotate: 0deg;
+}
 
     .clients{
         height: 35vh;
@@ -905,21 +880,64 @@
         font-size: 5vw;
     }
 
-    .gr-bg{
-        /* height: 80vw; */
-        padding-bottom: 5vw;
-        margin-bottom: 3vw;
-        overflow: hidden;
-    }
-    /* .how-do-text{
-        height: 100%; */
-        /* margin-top: -45vw;
-    } */
-    .next-cards{
-        width: 55%;
-        /* height: 100%; */
-        padding-top: 8vw;
-    } 
+     /* Before Clients */
+.before-clients{
+    height: 160vw;
+}
+
+.slider-container-before-cleints {
+    flex-direction: column;
+}
+
+.image-slider-before-client {
+    width: 100%;
+}
+
+
+.text-slider-before-client {
+    width: 100%;
+    height: 55%;
+}
+
+.text-slider-before-client p {
+    padding: 3vw;
+    color: #fff;
+    display: none;
+    font-size: 5vw;
+    text-align: justify;
+}
+
+.text-slider-before-client p.active-text {
+    display: block;
+}
+.text-slider-before-client .right-bottom-img{
+    position: absolute;
+    right: -25vw;
+    bottom: -25vw;
+    height: 53vw;
+}
+
+.controls-before-client {
+    gap: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.controls-before-client button {
+    height: 8vw;
+    width: 8vw;
+    font-size: 3vw;
+}
+#prev{
+    rotate: 0deg;
+}
+#next{
+    rotate: 0deg;
+}
     .clients{
         height: 35vw;
         margin-top: 16vw;

@@ -1059,119 +1059,104 @@ li a{
     cursor: pointer;
 }
 
-/* How Result page */
-
-.gr-bg{
-    /* height: 125vh; */
-    width: 100%;
-    background-color: #ebf4f3;
-    /* padding-bottom: 5vw; */
-    margin-bottom: 3vw;
-    overflow: hidden;
-}
-.goal-result{
-    width: 90%;
-    /* height: 100vh; */
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 5vw;
-    /* margin-bottom: 3vw; */
-    padding-top: 3vw;
-}
-.how-do-text{
-    width: 45%;
-    /* height: 118vh; */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: 3vw;
-}
-.how-do-text > h1{
-    color: black;
-    font-size: 4vw;
-    margin-bottom: 2vw;
+/* Before Clients */
+.before-clients{
+    height: 110vh;
     position: relative;
-    text-decoration: underline;
-    text-underline-offset: 1vw;
-    text-decoration-thickness: 3px;
 }
 
-.how-do-text > h1 span{
-    width: 30%;
-    position: absolute;
-    top: -.9vw;
-    left: 28vw;
-}
-.how-do-text > p{
-    margin-bottom: 1vw;
-}
-.how-do-text .btn{
-    border: none;
-    color: black;
-    font-size: 1.3vw;
-    font-weight: 600;
-    padding: 1vw 1.5vw;
-    background-color: #FFA000;
-    width: 35%;
-    cursor: pointer;
-}
-.next-cards{
-    width: 55%;
-    /* height: 115vh; */
-    padding-top: 1.5vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.slider-container-before-cleints {
     display: flex;
-    gap: 1.5vw;
-    padding-left: 3vw;
-}
-.bg-black{
-    background-color: #02B59C;
-}
-.bg-black > p{
-    color: white;
-
-}
-.bg-white{
-    background-color: white;
-    color: white;
-
-}
-.first-two-card .cardof{
-    height: 20vw;
-    width: 18vw;
-    padding: 1vw;
-    border-radius: 15px;
-    margin-top: 1vw;
-}
-.cardof .img{
-    height: 6vw;
-    width: 35%;
-}
-.img img{
+    align-items: center;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
-.cardof > p{
-    font-size: 1.3vw;
-    margin-top: 2vw;
+
+.image-slider-before-client {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-slider-before-client img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: top 1s ease-in-out;
+}
+.ob-r{
+    object-position: right;
+}
+.ob-c{
+    object-position: center;
+}
+.image-slider-before-client img.active {
+    top: 0;
+}
+
+.text-slider-before-client {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02B59C;
+    padding: 20px;
+    position: relative;
+}
+
+.text-slider-before-client p {
+    padding: 3vw;
+    color: #fff;
+    display: none;
+    font-size: 2vw;
     text-align: justify;
 }
-.mt{
-    margin-top: 8vw;
+
+.text-slider-before-client p.active-text {
+    display: block;
 }
+.text-slider-before-client .right-bottom-img{
+    position: absolute;
+    right: -15vw;
+    bottom: -15vw;
+    height: 33vw;
+}
+
+.controls-before-client {
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.controls-before-client button {
+    height: 4vw;
+    width: 4vw;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: black;
+    font-size: 2vw;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+#prev{
+    rotate: 90deg;
+}
+#next{
+    rotate: 90deg;
+}
+
 
 /* Clients */
 
