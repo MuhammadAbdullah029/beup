@@ -106,40 +106,32 @@ tl.from("li", {
   duration: .5,
   stagger: .1
 }, "ani");
-
-tl.from(".heading", {
-  y: -55,
-  opacity: 0,
-  duration: .3,
-}, "ani");
-
-tl.from(".p1", {
-  y: 33,
-  opacity: 0,
-  duration: .3,
-});
-tl.from(".input", {
-  y: 33,
-  opacity: 0,
-  duration: .3,
-});
-
-tl.from(".img", {
-  left: "50%",
+tl.from(".aa", {
   opacity: 0,
   duration: .5,
   stagger: .1
-}, "ani");
-
-tl.from(".page1", {
-  scrollTrigger: {
-    trigger: ".page1",
-    scroller: "body",
-    marker: true,
-    scrub: 2,
-    pin: true
-}
 });
+tl.from(".left .flex .text h1", {
+  x: -115,
+  opacity: 0,
+  duration: .3,
+}, "a")
+tl.from(".left p", {
+  x: -115,
+  opacity: 0,
+  duration: .3,
+})
+tl.from(".left .cont", {
+  opacity: 0,
+  duration: .3,
+})
+tl.from(".right img", {
+  x: 115,
+  opacity: 0,
+  duration: .5,
+}, "a")
+
+
 
 
 

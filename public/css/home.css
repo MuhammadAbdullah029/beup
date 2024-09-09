@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: gili;
-    src: url(/assert/fonts/Gilroy-Regular.ttf);
+    src: url(/assert/fonts/Gilroy-Regular.woff2);
 }
 *{
     margin: 0;
@@ -36,7 +36,7 @@ body{
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #02B59C;
-    z-index: 336353;
+    z-index: 333;
 }
 .loader h1{
     font-size: 9vw;
@@ -50,7 +50,7 @@ section{
     position: fixed;
     bottom: 1vw;
     right: 3vw;
-    z-index: 36;
+    z-index: 331;
     padding: 1vw;
     width: 5%;
 }
@@ -548,49 +548,6 @@ li a{
 
 
 
-/* page z */
-
-.page-z{
-    padding: 3vw;
-    margin-top: 5vw;
-    overflow: hidden;
-}
-
-.page-z .i-t {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-}
-.i-t .sl{
-    width: 40%;
-}
-.i-t .sl img{
-    height: 30vw;
-    margin-left: 7vw;
-    border-radius: 15px;
-}
-.i-t .sr{
-    width: 50%;
-}
-.i-t .sr h1{
-    width: 80%;
-    color: black;
-    font-size: 3vw;
-    margin-bottom: 1vw;
-    margin-left: -1.5vw;
-}
-.aq{
-    color: #02B59c;
-}
-.sr p{
-    width: 91%;
-    font-size: 1.5vw;
-    text-align: justify;
-}
 
 
 /* page */
@@ -605,13 +562,16 @@ li a{
     color: black;
     padding: 1.5vw 3vw ;
 }
-.page h1{
+.page > h1{
     font-size: 3vw;
     text-decoration: underline;
     text-underline-offset: 1vw;
     text-decoration-thickness: 3px;
     -webkit-text-decoration-color: #02B59C;
             text-decoration-color: #02B59C;
+}
+.aq{
+    color: #02B59C;
 }
 .page .te{
     width: 71%;
@@ -804,13 +764,13 @@ li a{
     border-radius: 50%;
 }
 .img-c-1{
-    background-image: url(/assert/home/smilling\ man.PNG);
+    background-image: url(/assert/home/smilling\ man.png);
     background-position: top;
     background-size: 133px;
     background-repeat: no-repeat;
 }
 .img-c-3{
-    background-image: url(/assert/home/smilling\ lady.PNG);
+    background-image: url(/assert/home/smilling\ lady.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

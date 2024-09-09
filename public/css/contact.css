@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: gili;
-    src: url(/assert/fonts/Gilroy-Regular.ttf);
+    src: url(/assert/fonts/Gilroy-Regular.woff2);
 }
 *{
     margin: 0;
@@ -651,7 +651,7 @@ ul li{
     }
     footer{
         gap: 3vw;
-        padding: 8vw;
+        padding: 5vw;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -666,14 +666,14 @@ ul li{
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        gap: 3vw;
     }
     .div .imgg{
+        scale: 2;
         height: 8vw;
         width: 15.5vw;
-    }
-    .div h4{
-        font-size: 4vw;
+        margin-left: 8vw;
+        margin: 7vw;
+        margin-bottom: 8vw;
     }
     .imgg img{
         height: 100%;
@@ -681,15 +681,21 @@ ul li{
         -o-object-fit: cover;
            object-fit: cover;
     }
-    .div > a{
-        font-size: 3vw;
-    }
-    .div ul li a{
-        font-size: 3vw;
+    .div h4{
+        font-size: 5vw;
+        margin-bottom: 2vw;
     }
     .div p{
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: 400;
+        margin-bottom: 1vw;
+
+    }
+    .div ul{
+        gap: 4vw;
+    }
+    .div a{
+        font-size: 4vw;
     }
     
 }

@@ -39,4 +39,31 @@ let menu = document.querySelector(".p-img");
     });
   });
   
+
+
+  let tl = gsap.timeline();
+
+
+  tl.from(".logo", {
+    x: -150,
+    opacity: 0,
+    duration: .5
+  });
+  
+  tl.from("li", {
+    y: -80,
+    opacity: 0,
+    duration: .5,
+    stagger: .1
+  });
+  tl.from(".left img", {
+    x: -180,
+    opacity: 0,
+    duration: .3,
+  });
+  tl.from(".right h1", {
+    x: 180,
+    opacity: 0,
+    duration: .3,
+  });
   

@@ -99,6 +99,11 @@ tl.from(".left .cont", {
   duration: .3,
   stagger: .1
 });
+tl.from(".phone-menu", {
+  opacity: 0,
+  duration: .3,
+  stagger: .1
+});
 
 
 gsap.from(".page .cards .card .anim-img", {
@@ -114,69 +119,6 @@ gsap.from(".page .cards .card .anim-img", {
     scrub: 2,
   }
 })
-
-
-
-
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
-
-function showSlide(n) {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (n + totalSlides) % totalSlides;
-    slides[currentSlide].classList.add('active');
-}
-
-function changeSlide(n) {
-    showSlide(currentSlide + n);
-}
-
-function autoSlide() {
-    changeSlide(1);
-}
-
-// Change slide every 5 seconds
-setInterval(autoSlide, 5000);
-
-
-
-const container = document.getElementById('scrolling-container');
-        const text = document.getElementById('scrolling-text');
-        const content = "&nbsp; &nbsp; &nbsp; Reimagine your sales & support team ";
-        let isScrolling = false;
-        let lastScrollTop = 0;
-        let scrollTimeout;
-        
-        // Duplicate the text to create a seamless loop
-        text.innerHTML = content.repeat(4);
-        
-        function setInitialPosition() {
-            const textWidth = text.offsetWidth;
-            const containerWidth = container.offsetWidth;
-            text.style.left = "0px";
-        }
-        
-        function animate() {
-            if (!isScrolling) {
-                const currentPosition = parseFloat(text.style.left) || 0;
-                const newPosition = currentPosition - 1;
-                const textWidth = text.offsetWidth / 2; // Divide by 2 because we repeated the text twice
-                
-                if (newPosition <= -textWidth) {
-                    text.style.left = "0px";
-                } else {
-                    text.style.left = newPosition + "px";
-                }
-            }
-            requestAnimationFrame(animate);
-        }
-        
-        
-        setInitialPosition();
-        animate();
-
-
 
 //Before Client Slider
 
@@ -231,3 +173,70 @@ startAutoSlide();
 }
 
 beforeClients();
+
+// AfterNav Slider
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = 3; 
+
+function showSlide(n) {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (n + totalSlides) % totalSlides;
+    slides[currentSlide].classList.add('active');
+}
+
+function changeSlide(n) {
+    showSlide(currentSlide + n);
+}
+
+function autoSlide() {
+    changeSlide(1);
+}
+
+setInterval(autoSlide, 5000);
+
+// Scrolling Text Code
+const container = document.getElementById('scrolling-container');
+const text = document.getElementById('scrolling-text');
+const content = "&nbsp; &nbsp; &nbsp; Reimagine your sales & support team ";
+let isScrolling = false;
+
+text.innerHTML = content.repeat(4);
+
+function setInitialPosition() {
+    const textWidth = text.offsetWidth;
+    text.style.left = "0px";
+}
+
+function animate() {
+    if (!isScrolling) {
+        const currentPosition = parseFloat(text.style.left) || 0;
+        const newPosition = currentPosition - 1;
+        const textWidth = text.offsetWidth; // Use full text width
+        
+        if (newPosition <= -textWidth) {
+            text.style.left = "0px";
+        } else {
+            text.style.left = newPosition + "px";
+        }
+    }
+    requestAnimationFrame(animate);
+}
+
+setInitialPosition();
+animate();
+
+
+function redirect(card) {
+  let a = card.querySelector('.sv');
+    if(a){
+      a.click();
+    }
+}
+
+
+
+
+
+

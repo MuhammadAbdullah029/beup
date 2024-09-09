@@ -332,7 +332,8 @@
         gap: 4vw;
     }
     .div a{
-        font-size: 3vw;
+        font-size: 3.5vw;
+        font-weight: 400;
     }
 
 }
