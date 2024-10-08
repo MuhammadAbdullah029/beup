@@ -533,7 +533,7 @@ li a{
 }
  /* footer */
 
- footer{
+footer{
     /* height: 25vh; */
     width: 100%;
     padding: 3vw 5vw;
@@ -544,7 +544,7 @@ li a{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #f7f9fb;
+    background-color: #02b89f;
 }
 .div{
     display: -webkit-box;
@@ -569,19 +569,22 @@ li a{
        object-fit: contain;
 }
 .div h4{
-    color: black;
+    color: #ffad42;
     font-size: 1.8vw;
 }
+.div h4:nth-of-type(){
+    color: #fff;
+}
 .div p{
-    color: black;
+    color: #fff;
     font-size: 1.1vw;
     font-weight: 400;
 }
 .div p:hover{
-    color: #03b59d;
+    color: #000;
 }
 .div a{
-    color: #000;
+    color:#fff;
     text-decoration: none;
 }
 .div ul{
@@ -598,11 +601,11 @@ ul li{
     list-style: none;
 }
 .div li a{
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 .div a:hover{
-    color: #03b59d;
+    color: #000;
 }
 .gr{
     font-weight: 400;

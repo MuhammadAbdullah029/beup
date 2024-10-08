@@ -250,6 +250,8 @@ li .nav-elem{
   .read-more-btn:hover {
     background-color: #007566;
   }
+/* footer */
+
 footer{
     /* height: 25vh; */
     width: 100%;
@@ -261,7 +263,7 @@ footer{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #f7f9fb;
+    background-color: #02b89f;
 }
 .div{
     display: -webkit-box;
@@ -272,10 +274,6 @@ footer{
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 1vw;
-}
-.div > a{
-    color: black;
-    text-decoration: none;
 }
 .div .imgg{
     height: 8vw;
@@ -290,16 +288,23 @@ footer{
        object-fit: contain;
 }
 .div h4{
-    color: black;
+    color: #ffad42;
     font-size: 1.8vw;
 }
+.div h4:nth-of-type(){
+    color: #fff;
+}
 .div p{
-    color: black;
+    color: #fff;
     font-size: 1.1vw;
     font-weight: 400;
 }
 .div p:hover{
-    color: #03b59d;
+    color: #000;
+}
+.div a{
+    color:#fff;
+    text-decoration: none;
 }
 .div ul{
     gap: 1.5vw;
@@ -314,12 +319,12 @@ footer{
 ul li{
     list-style: none;
 }
-li a{
-    color: black;
+.div li a{
+    color: #fff;
     text-decoration: none;
 }
 .div a:hover{
-    color: #03b59d;
+    color: #000;
 }
 .gr{
     font-weight: 400;

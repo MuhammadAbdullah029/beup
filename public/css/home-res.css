@@ -115,7 +115,7 @@
         height: 13vw;
         width: 45vw;
         border: none;
-        font-size: 4vw;
+        font-size: 6vw;
         border-radius: 5px;
     }
 
@@ -680,7 +680,26 @@
     .next{
         margin-right: -55vw;
     }
+/* Client Page */
+.clinet-page{
+    height: 30vh;
+    width: 100%;
+    margin-top: 5vh;
+    position: relative;
+}
+  
+.slider-text {
+    font-size: 8vw;
+  }
 
+.clinet-page>img{
+    height: 15%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
     footer{
         gap: 3vw;
         padding: 5vw;

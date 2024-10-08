@@ -387,6 +387,8 @@ form button:hover{
     height: 90%;
 }
 
+/* footer */
+
 footer{
     /* height: 25vh; */
     width: 100%;
@@ -398,7 +400,7 @@ footer{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #f7f9fb;
+    background-color: #02b89f;
 }
 .div{
     display: -webkit-box;
@@ -423,17 +425,23 @@ footer{
        object-fit: contain;
 }
 .div h4{
-    color: black;
+    color: #ffad42;
     font-size: 1.8vw;
 }
-.div p, a{
-    color: black;
+.div h4:nth-of-type(){
+    color: #fff;
+}
+.div p{
+    color: #fff;
     font-size: 1.1vw;
     font-weight: 400;
-    text-decoration: none;
 }
 .div p:hover{
-    color: #03b59d;
+    color: #000;
+}
+.div a{
+    color:#fff;
+    text-decoration: none;
 }
 .div ul{
     gap: 1.5vw;
@@ -449,16 +457,19 @@ ul li{
     list-style: none;
 }
 .div li a{
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 .div a:hover{
-    color: #03b59d;
+    color: #000;
 }
 .gr{
     font-weight: 400;
     font-size: .9vw;
     opacity: .7;
+}
+#shadow-host-companion{
+    display: none;
 }
 .hid{
     display: none;
